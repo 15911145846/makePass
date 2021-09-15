@@ -1,7 +1,7 @@
 <?php
 namespace Recallg\Makepass;
 
-use Recallg\MakepassMd5\Md5;
+use Recallg\Makepass\Md5;
 /**
  *
  */
