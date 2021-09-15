@@ -13,7 +13,7 @@ $str = $Makepass->encryption($password);
 
 echo $str."</br>";
 
-$res = decryption("123456", $str);
+$res = $Makepass->decryption("123456", $str);
 
 if ($res)
 {
