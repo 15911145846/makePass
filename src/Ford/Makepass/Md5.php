@@ -1,11 +1,6 @@
 <?php
 namespace Recallg\Makepass;
 
-// $str = "123456";
-// $md5 = new MD5($str);
-// echo $md5->getDigist();
-// echo "<br />", md5($str);
-
 class MD5 {
     const CHAR_ALIGNMENT = 8;
 

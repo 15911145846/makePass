@@ -30,7 +30,7 @@ class Verification
 	    $encryption = '';
 	    $time = time();
 	    $key2 = sha1($password);
-	    $pass_key = getMd5($password);
+	    $pass_key = $this->getMd5($password);
 	    $pass_key = password_hash($pass_key, PASSWORD_DEFAULT);
 	    $time_arr = str_split($time);
 	    rsort($time_arr);
@@ -78,7 +78,7 @@ class Verification
 				$key2 = sha1($password);
 				if ($key2 == $key2_str)
 				{
-					$password = getMd5($password);
+					$password = $this->getMd5($password);
 					return password_verify($password, $info[0]);
 				}
 			}
@@ -87,21 +87,3 @@ class Verification
 		return false;
 	}
 }
-
-// $password = '123456';
-//
-// // echo getMd5("jia980709");exit;
-//
-// $str = encryption($password);
-// echo $str."</br>";
-// $res = decryption("123456", $str);
-// if ($res)
-// {
-//
-//     echo '密码正确';
-//
-// }else{
-//
-//     echo '密码错误';
-//
-// }
