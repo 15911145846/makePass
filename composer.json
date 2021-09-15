@@ -1,0 +1,16 @@
+{
+    "name": "recallg/makepass",
+    "description": "This a  password verification  packagist .",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Recallg\\Makepass\\": "src/Ford/Makepass"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.0.0"
+    },
+    "require": {}
+}
