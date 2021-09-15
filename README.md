@@ -1,5 +1,6 @@
+# 这是一个基于php编写的密码验证类库
 
-## 一个基于php的密码验证类库 使用说明
+### 使用说明
 ```php
 <?php
 require './vendor/autoload.php';
